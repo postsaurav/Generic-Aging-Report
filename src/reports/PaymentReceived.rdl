@@ -21,6 +21,40 @@
                 <TablixCornerRow>
                   <TablixCornerCell>
                     <CellContents>
+                      <Textbox Name="Textbox1">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Parameters!CustomerNoCaption.Value</Value>
+                                <Style>
+                                  <FontFamily>Segoe UI</FontFamily>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox1</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixCornerCell>
+                  <TablixCornerCell>
+                    <CellContents>
                       <Textbox Name="Textbox4">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
@@ -28,8 +62,12 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>No </Value>
-                                <Style />
+                                <Value>=Parameters!CustomerNameCaption.Value</Value>
+                                <Style>
+                                  <FontFamily>Segoe UI</FontFamily>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />
@@ -60,7 +98,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.25in</Height>
+                  <Height>0.16654in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -73,6 +111,8 @@
                                 <TextRun>
                                   <Value>=Fields!PaymentValue.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>7pt</FontSize>
                                     <Format>=Fields!PaymentValueFormat.Value</Format>
                                   </Style>
                                 </TextRun>
@@ -122,10 +162,16 @@
                             <TextRuns>
                               <TextRun>
                                 <Value>=Fields!StartDateCol.Value + System.Environment.NewLine + Fields!EndDateCol.Value</Value>
-                                <Style />
+                                <Style>
+                                  <FontFamily>Segoe UI</FontFamily>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox5</rd:DefaultName>
@@ -140,7 +186,6 @@
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
-                      <rd:Selected>true</rd:Selected>
                     </CellContents>
                   </TablixHeader>
                 </TablixMember>
@@ -151,32 +196,35 @@
                 <TablixMember>
                   <Group Name="No_">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!No_.Value</GroupExpression>
+                      <GroupExpression>=Fields!CustomerNo.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!No_.Value</Value>
+                      <Value>=Fields!CustomerNo.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
                     <Size>1in</Size>
                     <CellContents>
-                      <Textbox Name="No_">
+                      <Textbox Name="CustomerNo">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!No_.Value</Value>
-                                <Style />
+                                <Value>=Fields!CustomerNo.Value</Value>
+                                <Style>
+                                  <FontFamily>Segoe UI</FontFamily>
+                                  <FontSize>7pt</FontSize>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>No_</rd:DefaultName>
+                        <rd:DefaultName>CustomerNo</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -190,12 +238,50 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>1.65in</Size>
+                        <CellContents>
+                          <Textbox Name="CustomerName">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>=Fields!CustomerName.Value</Value>
+                                    <Style>
+                                      <FontFamily>Segoe UI</FontFamily>
+                                      <FontSize>7pt</FontSize>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>CustomerName</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                    </TablixMember>
+                  </TablixMembers>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Height>0.5in</Height>
-            <Width>2in</Width>
+            <Height>0.41654in</Height>
+            <Width>3.65in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -203,33 +289,33 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2in</Height>
+        <Height>0.44167in</Height>
         <Style />
       </Body>
-      <Width>5.05556in</Width>
+      <Width>3.65in</Width>
       <Page>
         <Style />
       </Page>
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="No_Caption">
+    <ReportParameter Name="CustomerNoCaption">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>No_Caption</Value>
+          <Value>CustomerNoCaption</Value>
         </Values>
       </DefaultValue>
-      <Prompt>No_Caption</Prompt>
+      <Prompt>CustomerNoCaption</Prompt>
     </ReportParameter>
-    <ReportParameter Name="NameCaption">
+    <ReportParameter Name="CustomerNameCaption">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>NameCaption</Value>
+          <Value>CustomerNameCaption</Value>
         </Values>
       </DefaultValue>
-      <Prompt>NameCaption</Prompt>
+      <Prompt>CustomerNameCaption</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
@@ -240,12 +326,12 @@
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>No_Caption</ParameterName>
+          <ParameterName>CustomerNoCaption</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>1</RowIndex>
-          <ParameterName>NameCaption</ParameterName>
+          <ParameterName>CustomerNameCaption</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
@@ -292,11 +378,11 @@ End Function
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
-        <Field Name="No_">
-          <DataField>No_</DataField>
+        <Field Name="CustomerNo">
+          <DataField>CustomerNo</DataField>
         </Field>
-        <Field Name="Name">
-          <DataField>Name</DataField>
+        <Field Name="CustomerName">
+          <DataField>CustomerName</DataField>
         </Field>
         <Field Name="col_Array">
           <DataField>col_Array</DataField>

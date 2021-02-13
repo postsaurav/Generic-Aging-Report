@@ -3,6 +3,11 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Generic Aging Report">
     <body>
       <group id="body">
+        <trans-unit id="Report 973857822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Received</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report SDH Payment Received - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 973857822 - Control 3605153064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Start Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
