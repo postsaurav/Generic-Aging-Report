@@ -1,0 +1,30 @@
+{
+  "id": "da6f2f92-cdf0-4f47-902d-32c58c597a62",
+  "name": "Generic Aging Report",
+  "publisher": "Saurav Dhyani",
+  "brief": "Generic Aging Report.",
+  "description": "This extension is an example of how to create a Generic Aging Report.",
+  "version": "1.17.0.0",
+  "runtime": "6.0",
+  "privacyStatement": "https://www.sauravdhyani.com/",
+  "EULA": "https://www.sauravdhyani.com/",
+  "help": "https://www.sauravdhyani.com/contact/",
+  "contextSensitiveHelpUrl": "https://www.sauravdhyani.com/",
+  "url": "https://www.sauravdhyani.com/",
+  "logo": "image/sauravdhyani.png",
+  "dependencies": [
+  ],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 99999
+    }
+  ],
+  "features": [
+    "TranslationFile"
+  ],
+  "showMyCode": true
+}
